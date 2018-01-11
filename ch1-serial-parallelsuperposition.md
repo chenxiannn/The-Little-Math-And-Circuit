@@ -1,6 +1,6 @@
 ### **1.点亮LED**
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E1.png "CoverCircuit\_S1\_E1")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E1.png)
+![](/assets/MathCircuit_S1_P0.png)
 
 图1 点亮LED图
 
@@ -8,7 +8,7 @@
 
 当你一点点旋动旋钮的时候，你就在实现一个函数关系，LED亮度Bright与电阻值r的映射关系。
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_f617dbdae79f76c292cab6449bf10ee9.gif "Bright= f\(r\)")
+![](/assets/MathCircuit_S1_E0.gif)
 
 只要通过几根导线就可以构建的一个简单的电路，表达一种函数关系，亮度和阻值，这些连续量将是我们研究的主要部分，亮度是连续变化的，阻值也是连续变化的，但是亮度与阻值之间的对应关系是不变的，这也是我们的关注点，关注那些不变的东西，因为那才是抽象，也是函数的真正意义所在。
 
@@ -16,13 +16,13 @@
 
 为了介绍电阻，我从实验室的元件盒里拿了一大把色环电阻，然后用万用表一个个测试他们。
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E2-300x231.png "CoverCircuit\_S1\_E2")](http://eitlab.org/wp-content/uploads/2015/06/CoverCircuit_S1_E2.png)
+![](/assets/MathCircuit_S1_P1.png)
 
 图2 色环电阻
 
 我不停地测试，一个个进行阻值测量，结果如下:
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_a794ed251b75f86f336b5520d57d7f33.gif "R1=99.5 R2=99.0 R3=101.0 R4=102.2 R5= 98.5 ...")
+![](/assets/MathCircuit_S1_E1.gif)
 
 咦，怎么不是100欧姆，全都忽上忽下？！
 
@@ -30,25 +30,25 @@
 
 那问题又来了，电阻标称值100欧是什么东西？这个100欧是对什么的抽象？度娘告诉我，你自己测一测吧。我用直流电源，给100欧电阻加电压，测电流，最后得到下面这张图。
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E4.png "CoverCircuit\_S1\_E4")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E4.png)
+![](/assets/MathCircuit_S1_P2.png)
 
 图3 100欧电阻测量图
 
 我看着自测量的100欧电阻的U-I图，凝思片刻，终于恍然大悟，我发现所有的测量点分布在一条直线上，于是连起这条线。
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E3.png "CoverCircuit\_S1\_E3")
+![](/assets/MathCircuit_S1_P3.png)
 
-图4  100欧U-I线
+图4  100欧U-I线
 
 对图4中的直线进行拟合，拟合的方程为：
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_d95c968b619c1a1e69ff1fad034765fe.gif "U=103.1I-0.00043")
+![](/assets/MathCircuit_S1_E2.gif)
 
 看着这个方程，我拼命回忆中学代数的东西，发现103.1与100很接近，这才明白，Oh My God！原来电阻值就是这条直线的斜率呀！
 
 卧槽，原来电阻就是对U-I特性曲线斜率的抽象结果，怎么不早说呀。再来一个500欧电阻，证实一下这个结论。
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E7.png "CoverCircuit\_S1\_E7")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E7.png)
+![](/assets/MathCircuit_S1_P4.png)
 
 图5 100欧和500欧电阻
 
@@ -58,11 +58,11 @@
 
 Why 是这样子？度娘告诉我，电阻的电压不可以无穷大的，因为它有功率P的限制，电阻功率的P是什么？是电压与电流的乘积：
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_f3c9267b2b3449c37f3e06bd1edbf3dc.gif "P=UI={\frac{U^2} R}")
+![](/assets/MathCircuit_S1_E3.gif)
 
 而我手里拿的那个100欧电阻的功率是1/4W，所以我们会看到这样一张图：
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E5.png "CoverCircuit\_S1\_E5")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E5.png)
+![](/assets/MathCircuit_S1_P5.png)
 
 图6 功率P=1/4W图
 
@@ -70,13 +70,13 @@ Why 是这样子？度娘告诉我，电阻的电压不可以无穷大的，因�
 
 由电阻功率P的限制，我们发现了不等式的存在，你看或者不看，它都在那里，不喜不悲：
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_b54334c92b6ec819818e746776becb46.gif "P=UI&amp;lt;0.25W")
+![](/assets/MathCircuit_S1_E4.gif)
 
 功率P不等式的限制意味着图6中，那根红线是一个边界，所有功率1/4W的电阻，都只能工作在红线的左下侧区域，不管你是100欧，还是1k欧，都必须遵守这条规定。而某一个电阻的最大工作点，就是电阻UI曲线与该边界的交点。
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E6.png "CoverCircuit\_S1\_E6")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E6.png)
+![](/assets/MathCircuit_S1_P6.png)
 
-图7   1/4W功率限制区
+图7   1/4W功率限制区
 
 好吧，电阻我们就玩到这里，有没有感觉对电阻有一些了解了呢！！
 
@@ -84,25 +84,21 @@ Why 是这样子？度娘告诉我，电阻的电压不可以无穷大的，因�
 
 二极管是啥东东？它是一种特殊的有方向的电阻，甭管它多牛逼，我们先测测它是啥东西吧！就选一个大家都知道的二极管吧，1N4007。
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E9.png "CoverCircuit\_S1\_E9")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E9.png)
+![](/assets/MathCircuit_S1_P7.png)
 
-
-
-图7  二极管1N4007 U-I测试点图
+图7  二极管1N4007 U-I测试点图
 
 我擦，这些测试点是啥玩意呀？怎么分布地乱七八糟，直线不像直线，二次曲线不像二次曲线，最后终于用指数曲线拟合出它来了。
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_b001c6f032e2c3963a55e8acd62390c3.gif "I\_f=Is{\(exp^{\frac{qV\_f}{kT}} -1\)}")
+![](/assets/MathCircuit_S1_P8.png)
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E8.png "CoverCircuit\_S1\_E8")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E8.png)
-
-图8  二极管1N4007图
+图8  二极管1N4007图
 
 这才恍然大悟，二极管这东西，不是简单的电阻，仔细观察，U&lt;0时，电流为0，意味着二极管开路，电阻无穷大，U&gt;0时，随着电压增加，电流呈指数级增长，意味着电阻越来越小。我们不可能再像电阻那样用一个斜率值去抽象这个二极管，因为它处处斜率都不一样，所有如果精确描述一个二极管，不得不用指数函数或者特性曲线。
 
 But，But，工程师聪明的地方就在于But，那些乱七八糟的UI数据，或者函数关系，如果直接用会把人搞死的，所以工程师会有更灵活的方法去使用这些东西，后面再细说。这里先举一个很简单的例子，看图9中的两个电路。
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E10.png "CoverCircuit\_S1\_E10")](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E10.png)
+![](/assets/MathCircuit_S1_P9.png)
 
 图9 二极管测试图
 
@@ -116,9 +112,9 @@ But，But，工程师聪明的地方就在于But，那些乱七八糟的UI数据
 
 Oh，NO，一看你就很肤浅！来一起玩点High的吧！先看下面这一张图10，你能够悟出点东西来吗？！
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/HA001_S1_P004.png "HA001\_S1\_P004")](理解电路1_静态电路的初步-EIT%20Lab博客_files/HA001_S1_P004.png)
+![](/assets/MathCircuit_S1_P10.png)
 
-图10   串并联\(P:并联，S:串联\)
+图10   串并联\(P:并联，S:串联\)
 
 好啦，不卖关子了，我们先看看电阻的串并联，图10的左半部分，第一张图是100欧和500欧电阻串并联的电路图，第二张图是两个电阻U-I特性曲线图上的串并联表达，第三张图是数学公式层面的串并联表达，同一种组合方式有不同的表达与呈现方式。
 
@@ -140,15 +136,15 @@ Oh，NO，一看你就很肤浅！来一起玩点High的吧！先看下面这一
 
 二极管的电压与电流是函数关系：
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_a7ba81fb41c0b6b6c8a3f1b98e8e7826.gif "I=f\(U\)")
+![](/assets/MathCircuit_S1_E6.gif)
 
 并联的话，电压相等,电流叠加
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_0bcffb4c80b342804f3ddcdf3afd0a08.gif "I=I\_1+I\_2=f\_1\(U\)+f\_2\(U\)")
+![](/assets/MathCircuit_S1_E7.gif)
 
 串联的话，电流相等,电压叠加
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_bd6ba06acc584d0ed6587d7196e30786.gif "U=U\_1+U\_2=f\_1^{-1}\(I\)+f\_2^{-1}\(I\)")
+![](/assets/MathCircuit_S1_E8.gif)
 
 我擦，用到反函数了！
 
@@ -167,9 +163,7 @@ Oh，NO，一看你就很肤浅！来一起玩点High的吧！先看下面这一
 1. 请画出串联后的风道特性曲线。
 2. 两个风道并联合并为一个风道，请画出合成后的风道特性曲线？
 
-[![](理解电路1_静态电路的初步-EIT%20Lab博客_files/TEST1_7.png "TEST1\_7")](理解电路1_静态电路的初步-EIT%20Lab博客_files/TEST1_7.png)
-
-
+![](/assets/MathCircuit_S1_P12.png)
 
 图11 风道串并联
 
@@ -181,11 +175,11 @@ Oh，NO，一看你就很肤浅！来一起玩点High的吧！先看下面这一
 
 不停地串联，你会得到
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_0478487daf344140d9c1ebcd18e236a2.gif "1,2,3,4,5,6,7,8....")
+![](/assets/MathCircuit_S1_E9.gif)
 
 不停地并联，你会得到
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/tex_cfab62ae8f269d9582bdeb663c9fd941.gif "1,\frac12,\frac13,\frac14,\frac15,\frac16,\frac17,\frac18....")
+![](/assets/MathCircuit_S1_E10.gif)
 
 你创造出了自然数，还有分数，下面就可以创造出所有的有理数。
 
@@ -193,7 +187,9 @@ Oh，NO，一看你就很肤浅！来一起玩点High的吧！先看下面这一
 
 问题3 请看下面一组图，看看串并联有啥不一样的应用？！
 
-![](理解电路1_静态电路的初步-EIT%20Lab博客_files/TEST1_11.png "TEST1\_11")![](理解电路1_静态电路的初步-EIT%20Lab博客_files/CoverCircuit_S1_E11.png "CoverCircuit\_S1\_E11")图12 串并联扩展图
+![](/assets/MathCircuit_S1_P12.png)![](/assets/MathCircuit_S1_P13.png)
+
+图12 串并联扩展图
 
 不至于毁三观吧！
 
