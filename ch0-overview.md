@@ -1,12 +1,10 @@
-
-
 ## 1.工程思想
 
 我们看下面的这张对比图，你能够发现什么东西？
 
-[![](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/HA001_S1_P002.png "HA001\_S1\_P002")](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/HA001_S1_P002.png)
+![](/assets/MathCircuit_S1_P0.png)
 
-图1  电路对比图
+图1  电路对比图
 
 横向看电路图这一层，左侧是一个可变电阻控制一个灯的亮度强弱，右侧是一个开关控制控制一个灯的亮灭。看到这里，有没有什么感觉呢？左边其实对应的连续量，对应我们的连续数学，也正是EE\(Electrical Engineer\)要研究的，右侧对应的是离散量，构建的不同状态之间的关系，对应我们的离散数学，也正是CS\(Computer Science\)要研究的。
 
@@ -16,7 +14,7 @@
 
 设计的过程就是用简单的事物构建复杂事物的一个过程，而分析的过程正好相反，你可以把设计看成分析的反函数，如下图所示。
 
-[![](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/Design_Analysis.png "Design\_Analysis")](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/Design_Analysis.png)
+![](/assets/MathCircuit_S1_P1.png)
 
 图2设计与分析
 
@@ -34,7 +32,7 @@ CS和EE两个方向，他们是从物理世界挣脱出来的，以电为载体�
 
 CS&EE几乎凝聚了人类近现代工程设计所有核心思想与技术，这里课程强调的是控制论，信息论和系统论思想融合，重点诠释复杂系统的分析与设计方法，尤其是混合系统，感谢那些前辈们给我们趟过了这么多未知的河流。
 
-[![](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/class_mainform.png "class\_mainform")](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/class_mainform.png)
+![](/assets/MathCircuit_S1_P2.png)
 
 图3 知识框架
 
@@ -46,9 +44,9 @@ CS&EE几乎凝聚了人类近现代工程设计所有核心思想与技术，这
 * CS《理解软件》-EE《理解信号》
 * 综合阶段，通过前面的学习知识，构建一个软硬件混合的嵌入式系统。
 
-[![](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/class_mainform1.png "class\_mainform1")](关于CS和EE课程的个人理解与感悟-EIT%20Lab博客_files/class_mainform1.png)
+![](/assets/MathCircuit_S1_P3.png)
 
- 图4  课程框架
+图4  课程框架
 
 ## 
 
@@ -62,11 +60,11 @@ CS课程按照计算机的发展史走，从开关开始，最后实现一个操
 
 参考书籍
 
-_\[1\]  Charles Petzold. 编码：隐匿在计算机软硬件背后的语言\[M\]._
+_\[1\]  Charles Petzold. 编码：隐匿在计算机软硬件背后的语言\[M\]._
 
 _\[2\] 李忠. 穿越计算机的迷雾\[M\]._
 
-_\[3\] 夏宇闻. Verilog数字系统设计教程\[M\]._
+_\[3\] 夏宇闻. Verilog数字系统设计教程\[M\]._
 
 ## 4.建议EE课程思路
 
@@ -76,7 +74,7 @@ EE的课程偏重电路原理，信号与系统，还有自动控制原理，从
 
 建议工具:Matlab+PSpice
 
-_\[1\]  邱关源. 电路\[M\]._
+_\[1\]  邱关源. 电路\[M\]._
 
 _\[2\] William H.Hayt. Engineering Circuit Analysis\[M\]._
 
